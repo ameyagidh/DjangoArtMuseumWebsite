@@ -1,0 +1,47 @@
+{% extends 'built.html' %}
+{% block head %}
+<style>{% include "style.css" %}</style>
+{% endblock head %}
+
+{% block title %}Home | ArtStock{% endblock title %}
+{% block content %}
+    <div class='ecom'>
+    <div class="container1">
+      {% for item in var %}
+     
+      <div class="card1">
+        <div class="imgBx">
+          <img src="{{item.image.url}}">
+          <ul class="action1">
+            <li><a href="{% url 'Art' item.Art_id %}"><i class="fa fa-info" aria-hidden="true"></i></a>
+            <span>About</span>
+            </li>
+            <li><a class="btn btn-danger btn-lg" href="{% url 'Add_to_Cart' item.Art_id %}"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <span>Add to Cart</span></a>
+            </li>
+            <li><a href="{{item.image.url}}"><i class="fa fa-eye" aria-hidden="true"></i>
+              <span>Full screen</span>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="productName">
+            <a href="{% url 'Art' item.Art_id %}" style="text-decoration: none;"><h3>{{item.name}}</h3></a>
+          </div>
+          <div class="price_rating">
+            <h2>₹ {{item.price}}</h2>
+            {% comment %} <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div> {% endcomment %}
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+{% endblock content %}

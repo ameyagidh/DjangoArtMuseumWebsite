@@ -1,0 +1,42 @@
+{% extends 'built.html' %}
+{% block head %}<style>{% include "style5.css" %}</style>{% endblock head %}
+{% block title %}{% endblock title %}
+{% block content %}
+<div class="ArtContainer">
+    <div class="small-container21 single-product21">
+        <div class="row21">
+            <div class="col21-2">
+              <a href="{{view.image.url}}"><img src="{{view.image.url}}" width="100%" id="ProductImg"></a>
+            </div>
+            <div class="col21-2">
+                <p>Home / Art/ {{view.Art_id}}</p>
+                <h2>{{view.name}}</h2>
+                <h4>Price: ₹{{view.price}}</h4>
+                {% comment %} <select>
+                    <option>Select Printed Size</option>
+                    <option>A1</option>
+                    <option>A2</option>
+                    <option>A3</option>
+                    <option>A4</option>
+                </select> {% endcomment %}
+                <input type="number" name="quantity" value="1" min="1">
+                <a href="{% url 'Add_to_Cart' view.Art_id %}" class="btn21">Add to Cart</a>
+                <h3>Product detail<i class="fa fa-indent"></i></h3>
+                <br>
+                <p><strong>Name:</strong> {{view.name}}</p>
+                <p><strong>Made By:</strong> {{view.Artist_id}}</p>
+                <p><strong>Category:</strong> {{view.category}}</p>
+                <p><strong>Discription:</strong> {{view.descrip}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var smallImg = Document.getElementsByClassName("small-img");
+    smallImg[0].onclick = function(){
+        ProductImg.src = smallImg[0].src;
+    }
+</script>
+{% endblock content %}
