@@ -2,6 +2,14 @@
 
 This project is a Django-based website for stock art, where users can browse, search, and download high-quality images for their projects. Here's a basic README to get you started:
 
+## Screenshots
+
+<img width="1496" alt="Screenshot 2024-03-16 at 8 20 35 PM" src="https://github.com/ameyagidh/DjangoArtMuseumWebsite/assets/65457905/55f7b55a-a26b-437d-b49d-446b73245b54">
+<img width="1496" alt="Screenshot 2024-03-16 at 8 20 28 PM" src="https://github.com/ameyagidh/DjangoArtMuseumWebsite/assets/65457905/3b266f1f-4042-4a5c-8965-d4824777de8b">
+<img width="1496" alt="Screenshot 2024-03-16 at 8 20 19 PM" src="https://github.com/ameyagidh/DjangoArtMuseumWebsite/assets/65457905/ba6812ee-d4ee-4e30-bcc5-5da7d7cf1827">
+<img width="1496" alt="Screenshot 2024-03-16 at 8 20 09 PM" src="https://github.com/ameyagidh/DjangoArtMuseumWebsite/assets/65457905/3183a620-c85e-40de-b4c7-1cdabe986e8d">
+
+
 ## Features
 
 - **User Authentication**: Users can register, log in, and log out.
