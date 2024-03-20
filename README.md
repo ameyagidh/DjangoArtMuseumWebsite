@@ -1,6 +1,6 @@
 # Django Art Museum Website
 
-This project is a Django-based website for stock art, where users can browse, search, and download high-quality images for their projects. Here's a basic README to get you started:
+This project is a Django-based website for stock art, where users can browse, search, and download high-quality images for their projects. 
 
 ## Screenshots
 
